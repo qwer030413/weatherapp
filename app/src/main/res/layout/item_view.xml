@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:id="@+id/imageView"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="9dp"
+
+
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/date"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:text="day"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/temp"
+        android:textSize="20dp"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:text="temperature"
+    />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weatherCond"
+        android:textSize="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@id/temp"
+        android:layout_toEndOf="@id/imageView"
+        android:gravity="right"
+        android:textColor="@color/black"
+        android:text="weather"
+        />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/black"
+
+        android:layout_below="@id/imageView"
+
+        />
+
+
+
+</RelativeLayout>
